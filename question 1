@@ -1,0 +1,6 @@
+def myreduce(fnc, seq):
+    tally = seq[0]
+    for next in seq[1:]:
+        tally = fnc(tally, next)
+    return tally
+myreduce( (lambda x, y: x * y), [1, 2, 3, 4])
