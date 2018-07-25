@@ -1,0 +1,24 @@
+str1 ="ACADGILD"
+list1 = [x for x in str1]
+print(list1)
+
+str2 ="xyz"
+List2 = [i*n for i in str2 for n in range(1,5)]
+print(List2)
+
+str2="xyz"
+List3 = [j for j in str2] + [j*2 for j in str2] + [j*3 for j in str2] +[j*4 for j in str2]
+print(List3)
+
+str4 ="23456"
+List4 = [[str4[i]] for i in range(0,3)] +[[str4[i]] for i in range(1,4)] +[[str4[i]] for i in range(2,5)]
+print(List4)
+
+str5 ="2345678"
+List5 = [[str5[i] for i in range(0,4)]] + [[str5[i] for i in range(1,5)]] + [[str5[i] for i in range(2,6)]] + [[str5[i] for i in range(3,7)]]
+print(List5)
+
+List8 = [(x,y) for x in [1,2,3] for y in [1,2,3]]
+List9=[]
+List9=[List8[y*3+x] for x in [0,1,2] for y in[0,1,2]]
+print (List9)
